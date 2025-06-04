@@ -1,6 +1,6 @@
 {
   "name": "react-simple-modal-by-vassili-langlois",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "A customizable React modal component",
   "keywords": [
     "react",
@@ -10,12 +10,18 @@
     "library"
   ],
   "author": "Vassili Langlois",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
   "style": "dist/modal.css",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "scripts": {
     "build": "vite build && cp src/Modal.css dist/modal.css && cp README.md dist/README.md"
   },

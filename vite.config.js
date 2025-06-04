@@ -10,9 +10,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "index.js"),
+      entry: path.resolve(__dirname, "src/Modal.jsx"),
       name: "ReactSimpleModal",
-      fileName: "index",
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],

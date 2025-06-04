@@ -67,7 +67,7 @@
 }
 
 .close-button {
-  width: 2rem;
+  width: fit-content;
   height: 2rem;
   background: transparent;
   border: none;
