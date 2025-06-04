@@ -51,5 +51,3 @@ function App() {
 ## License
 
 MIT
-
-# OC---Project-13---react-simple-modal
